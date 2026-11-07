@@ -1,0 +1,143 @@
+{
+  "start": "entrance",
+  "scenes": [
+    {
+      "id": "entrance",
+      "title": "Cổng chùa",
+      "image": "assets/images/entrance/buu-long-gate",
+      "aspect": 1.4997,
+      "crop": { "top": 0.08 },
+      "focus": [50, 62],
+      "parent": null,
+      "hotspots": [
+        {
+          "id": "enter",
+          "type": "go",
+          "to": "main-hall",
+          "rect": [37, 54, 26, 44],
+          "label": "Vào chánh điện"
+        }
+      ]
+    },
+    {
+      "id": "main-hall",
+      "title": "Chánh điện",
+      "image": "assets/images/main-hall/golden-buddha-hall",
+      "aspect": 1.5,
+      "crop": { "top": 0.15 },
+      "focus": [50, 66],
+      "parent": "entrance",
+      "hotspots": [
+        {
+          "id": "pray",
+          "type": "action",
+          "action": "pray",
+          "rect": [43, 53, 13, 23],
+          "label": "Lễ Phật, cầu nguyện"
+        },
+        {
+          "id": "flowers",
+          "type": "action",
+          "action": "flowers",
+          "rect": [38.5, 81, 23, 14],
+          "label": "Dâng hoa"
+        },
+        {
+          "id": "candle-left",
+          "type": "action",
+          "action": "candle",
+          "rect": [14.8, 64, 6, 25],
+          "label": "Thắp nến"
+        },
+        {
+          "id": "candle-right",
+          "type": "action",
+          "action": "candle",
+          "rect": [78.9, 64, 6.4, 25],
+          "label": "Thắp nến"
+        },
+        {
+          "id": "wooden-fish",
+          "type": "action",
+          "action": "wooden-fish",
+          "rect": [25.4, 80.5, 7.2, 10],
+          "label": "Gõ mõ"
+        },
+        {
+          "id": "bowl-bell",
+          "type": "action",
+          "action": "bowl-bell",
+          "rect": [65.4, 80.5, 7.6, 10],
+          "label": "Thỉnh chuông gia trì"
+        },
+        {
+          "id": "to-incense",
+          "type": "go",
+          "to": "incense",
+          "rect": [0, 58, 7, 34],
+          "edge": "left",
+          "label": "Ra lư hương"
+        },
+        {
+          "id": "to-bell",
+          "type": "go",
+          "to": "bell",
+          "rect": [93, 58, 7, 34],
+          "edge": "right",
+          "label": "Lên gác chuông"
+        }
+      ]
+    },
+    {
+      "id": "incense",
+      "title": "Lư hương",
+      "image": "assets/images/incense/stone-incense-burner",
+      "aspect": 1.7775,
+      "focus": [51, 62],
+      "parent": "main-hall",
+      "hotspots": [
+        {
+          "id": "burner",
+          "type": "action",
+          "action": "incense",
+          "rect": [36.5, 64, 30.5, 20],
+          "label": "Thắp hương"
+        }
+      ]
+    },
+    {
+      "id": "bell",
+      "title": "Gác chuông",
+      "image": "assets/images/bell/bronze-bell-tower",
+      "aspect": 1.504,
+      "focus": [51, 50],
+      "parent": "main-hall",
+      "hotspots": [
+        {
+          "id": "great-bell",
+          "type": "action",
+          "action": "ring-bell",
+          "rect": [32, 6, 40, 87],
+          "label": "Thỉnh đại hồng chung"
+        }
+      ]
+    },
+    {
+      "id": "fortune",
+      "title": "Xin xăm",
+      "image": "assets/images/fortune/fortune-sticks",
+      "aspect": 1.3109,
+      "focus": [36, 62],
+      "parent": "main-hall",
+      "hotspots": [
+        {
+          "id": "cylinder",
+          "type": "action",
+          "action": "fortune",
+          "rect": [25, 36, 19, 64],
+          "label": "Lắc ống xăm"
+        }
+      ]
+    }
+  ]
+}

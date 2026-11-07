@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Chùa</title>
+  <meta name="description" content="Một chuyến viếng chùa tĩnh lặng, dựng từ ảnh chụp thật.">
+  <meta name="theme-color" content="#120e0a">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/temple.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <!-- Scenes are inserted here by js/temple.js -->
+  <div id="world" aria-live="polite"></div>
+
+  <!-- Location caption, fades in on arrival -->
+  <div id="place-title" aria-hidden="true"></div>
+
+  <!-- Minimal controls -->
+  <button id="btn-back" class="hud-btn" type="button" aria-label="Quay lại" hidden>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" /></svg>
+  </button>
+  <div id="hud-right">
+    <div id="sound-group">
+      <input id="volume" type="range" min="0" max="100" value="85" aria-label="Âm lượng">
+    <button id="btn-sound" class="hud-btn" type="button" aria-label="Tắt âm thanh">
+      <svg class="icon-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" /><path d="M15.5 9a4 4 0 0 1 0 6M18 6.5a7.5 7.5 0 0 1 0 11" /></svg>
+      <svg class="icon-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9.5h3.5L12 5.5v13l-4.5-4H4z" /><path d="M16 9.5l5 5M21 9.5l-5 5" /></svg>
+    </button>
+    </div>
+    <button id="btn-fullscreen" class="hud-btn" type="button" aria-label="Toàn màn hình">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5" /></svg>
+    </button>
+  </div>
+
+  <!-- Short feedback line -->
+  <div id="whisper" aria-live="polite"></div>
+
+  <!-- Places strip, appears when the pointer nears the bottom edge -->
+  <nav id="places" aria-label="Các nơi trong chùa"></nav>
+
+  <!-- Shown only when opened from disk (file://), where modules and fetch cannot load -->
+  <div id="file-notice" hidden>
+    <p>Vui lòng mở trang này qua một máy chủ web cục bộ (ví dụ “Live Server” trong VS Code).<br>
+    Trình duyệt chặn mã và dữ liệu của trang khi mở tệp trực tiếp từ ổ đĩa.</p>
+  </div>
+
+  <script>
+    if (location.protocol === 'file:') document.getElementById('file-notice').hidden = false;
+  </script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

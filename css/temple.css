@@ -1,0 +1,404 @@
+/* Scenes, photo plate and hotspots */
+
+.scene {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  will-change: opacity, transform;
+}
+.scene.active { opacity: 1; visibility: visible; }
+
+/* The plate is the full photograph at cover scale; it is translated so the
+   scene's focal point stays in view. Everything inside uses % of the photo. */
+.plate {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform-origin: 0 0;
+}
+.plate .photo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: fill;
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+
+.plate .overlays,
+.plate .hotspots {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+.plate .hotspots > * { pointer-events: auto; }
+
+/* Soft edge darkening for mood and to calm bright photo edges */
+.scene .vignette {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse 85% 80% at 50% 55%, transparent 55%, rgba(8, 5, 2, 0.42) 100%),
+    linear-gradient(to bottom, rgba(8, 5, 2, 0.35), transparent 16%, transparent 84%, rgba(8, 5, 2, 0.3));
+}
+
+/* ---------- Hotspots ---------- */
+.hotspot {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+.hotspot::before {             /* warm light that gathers on the object */
+  content: "";
+  position: absolute;
+  inset: -12%;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(var(--glow), 0.38), rgba(var(--glow), 0.14) 60%, transparent);
+  opacity: 0;
+  transform: scale(0.92);
+  transition: opacity 600ms ease, transform 900ms ease;
+  pointer-events: none;
+  mix-blend-mode: screen;
+}
+.hotspot:hover::before,
+.hotspot:focus-visible::before { opacity: 1; transform: scale(1); }
+.hotspot:focus-visible { outline: none; }
+
+/* Edge passages (to other areas) glow from the side instead of the centre */
+.hotspot.edge-left, .hotspot.edge-right { border-radius: 0; }
+.hotspot.edge-left::before  { inset: 0; border-radius: 0; background: linear-gradient(to right, rgba(var(--glow), 0.22), transparent); }
+.hotspot.edge-right::before { inset: 0; border-radius: 0; background: linear-gradient(to left,  rgba(var(--glow), 0.22), transparent); }
+
+/* Caption that appears beside a hovered hotspot */
+.hs-label {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 8px);
+  transform: translate(-50%, 4px);
+  padding: 6px 14px 7px;
+  font: 17px/1.3 var(--serif);
+  color: var(--ink);
+  border-radius: 10px;
+  background: rgba(18, 14, 10, 0.62);
+  border: 1px solid rgba(var(--glow), 0.25);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  white-space: nowrap;
+  text-align: center;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 400ms ease, transform 400ms ease;
+}
+.hotspot:hover .hs-label,
+.hotspot:focus-visible .hs-label { opacity: 1; transform: translate(-50%, 0); }
+
+/* Labels near the top of the photo would be clipped: show them below instead */
+.hotspot.label-below .hs-label { bottom: auto; top: calc(100% + 8px); }
+.hotspot.edge-left .hs-label  { left: 12px; transform: translate(0, 4px); bottom: 50%; }
+.hotspot.edge-right .hs-label { left: auto; right: 12px; transform: translate(0, 4px); bottom: 50%; }
+.hotspot.edge-left:hover .hs-label, .hotspot.edge-left:focus-visible .hs-label,
+.hotspot.edge-right:hover .hs-label, .hotspot.edge-right:focus-visible .hs-label { transform: translate(0, 0); }
+
+/* "H" key: outline all hotspots */
+.show-hotspots .hotspot { outline: 1.5px dashed rgba(var(--glow), 0.75); outline-offset: -1px; }
+.show-hotspots .hotspot .hs-label { opacity: 0.9; transform: translate(-50%, 0); }
+.show-hotspots .hotspot.edge-left .hs-label,
+.show-hotspots .hotspot.edge-right .hs-label { transform: none; }
+
+/* First-arrival hint: every hotspot breathes once, faintly */
+.scene.hint .hotspot::before { animation: hs-hint 2600ms ease-in-out 1; }
+
+/* =====================================================================
+   Ritual overlays. Everything is positioned in % of the photo plate.
+   ===================================================================== */
+.fx-canvas { position: absolute; pointer-events: none; }
+
+/* ---------- Candles ---------- */
+.candle-set { position: absolute; inset: 0; }
+.flame {
+  position: absolute;
+  aspect-ratio: 5 / 13;
+  transform: translate(-50%, -96%);
+  transform-origin: 50% 100%;
+  border-radius: 50% 50% 46% 46% / 62% 62% 38% 38%;
+  background:
+    radial-gradient(ellipse 34% 26% at 50% 80%, rgba(255, 255, 245, 1), rgba(255, 246, 200, 0.9) 60%, transparent 100%),
+    radial-gradient(ellipse 50% 70% at 50% 72%, rgba(255, 214, 120, 0.95), rgba(255, 150, 40, 0.75) 55%, rgba(255, 110, 20, 0) 100%);
+  filter: blur(0.35px);
+  mix-blend-mode: screen;
+  opacity: 0;
+  transition: opacity 700ms ease;
+}
+.flame::after {                     /* soft halo around each flame */
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 62%;
+  width: 520%;
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(255, 190, 90, 0.38), rgba(255, 160, 60, 0.12) 50%, transparent);
+}
+.candle-set.lit .flame {
+  opacity: 1;
+  transition-delay: calc(var(--i) * 110ms);
+  animation: flicker 2.6s ease-in-out var(--d) infinite;
+}
+.candle-glow {
+  position: absolute;
+  width: 15%;
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(255, 175, 80, 0.30), rgba(255, 150, 60, 0.10) 55%, transparent);
+  mix-blend-mode: screen;
+  opacity: 0;
+  transition: opacity 1600ms ease;
+}
+.candle-set.lit .candle-glow { opacity: 1; animation: glow-breathe 5s ease-in-out infinite; }
+
+/* ---------- Lotus offering ---------- */
+@property --droop { syntax: "<angle>"; inherits: false; initial-value: 0deg; }
+.lotus {
+  position: absolute;
+  height: auto;
+  transform: translate(-50%, -100%) rotate(calc(var(--rot) + var(--droop))) scaleX(var(--flip));
+  transform-origin: 50% 100%;
+  filter: brightness(0.92) saturate(1.08) sepia(0) drop-shadow(0 1px 2px rgba(0, 0, 0, 0.45));
+  animation: lotus-in 1800ms ease-out both;
+  /* Wilting is a very slow transition (duration set from data/rituals.json) */
+  transition: filter var(--wilt, 1500s) linear, --droop var(--wilt, 1500s) cubic-bezier(.5, 0, .9, .6);
+}
+.lotus.wilting {
+  --droop: var(--droop-to, 6deg);
+  filter: brightness(0.72) saturate(0.5) sepia(0.3) drop-shadow(0 1px 2px rgba(0, 0, 0, 0.45));
+}
+
+/* ---------- Prayer ---------- */
+.pray-dim {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at var(--hx) var(--hy), transparent 0, transparent 7%, rgba(6, 3, 1, 0.78) 32%);
+  opacity: 0;
+  transition: opacity 1400ms ease;
+}
+.pray-halo {
+  position: absolute;
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(255, 214, 140, 0.30), rgba(255, 190, 100, 0.10) 55%, transparent);
+  mix-blend-mode: screen;
+  opacity: 0;
+  transition: opacity 1600ms ease;
+}
+.scene.praying .pray-dim { opacity: 0.72; }
+.scene.praying .pray-halo { opacity: 1; animation: glow-breathe 6s ease-in-out infinite; }
+.scene.praying .hotspots { visibility: hidden; }
+.scene.bow .pray-dim { animation: bow-dim 2200ms ease-in-out; }
+
+.wish-light {
+  position: absolute;
+  max-width: 30%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font: italic clamp(16px, 1.5vw, 22px)/1.4 var(--serif);
+  color: #fff3d6;
+  text-shadow: 0 0 12px rgba(255, 200, 110, 0.9), 0 0 2px rgba(255, 220, 160, 0.8);
+  white-space: normal;
+  animation: wish-rise 6s ease-out forwards;
+}
+
+.pray-panel {
+  position: fixed;
+  z-index: 50;
+  left: 50%;
+  bottom: 56px;
+  width: min(460px, calc(100vw - 32px));
+  padding: 20px 24px 18px;
+  transform: translate(-50%, 16px);
+  border-radius: 16px;
+  background: rgba(18, 13, 8, 0.66);
+  border: 1px solid rgba(var(--glow), 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 600ms ease, transform 600ms ease;
+  user-select: text;
+}
+.pray-panel.show { opacity: 1; transform: translate(-50%, 0); }
+.pray-invocation { margin: 0 0 14px; font-size: 21px; color: var(--gold); letter-spacing: 0.02em; }
+.pray-actions { display: flex; justify-content: center; gap: 10px; margin-top: 4px; }
+.pray-actions button {
+  min-width: 108px;
+  padding: 9px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(var(--glow), 0.4);
+  background: transparent;
+  color: var(--ink);
+  font: 17px/1.2 var(--serif);
+  cursor: pointer;
+  transition: background 250ms, border-color 250ms;
+}
+.pray-actions button.primary { background: rgba(var(--glow), 0.2); }
+.pray-actions button:hover, .pray-actions button:focus-visible { background: rgba(var(--glow), 0.3); border-color: rgba(var(--glow), 0.8); outline: none; }
+.pray-step { min-height: 1.4em; margin: 12px 0 0; font-size: 18px; color: var(--ink); }
+.pray-step:empty { display: none; }
+.pray-panel.bowing .pray-actions { display: none; }
+
+/* ---------- Wooden fish, bowl bell, great bell ---------- */
+.knock-glow, .sound-ring {
+  position: absolute;
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.knock-glow {
+  background: radial-gradient(closest-side, rgba(255, 200, 120, 0.45), rgba(255, 170, 80, 0.12) 60%, transparent);
+  mix-blend-mode: screen;
+  animation: knock 700ms ease-out forwards;
+}
+.sound-ring {
+  border: 1.5px solid rgba(255, 214, 150, 0.7);
+  box-shadow: 0 0 8px rgba(255, 200, 120, 0.35);
+  opacity: 0;
+  animation: sound-ring 2400ms ease-out forwards;
+}
+.sound-ring.big { width: 9%; border-width: 2px; animation-duration: 3400ms; }
+
+.bell-cut {
+  position: absolute;
+  inset: 0;
+  display: none;
+  will-change: transform;
+}
+.bell-cut.moving { display: block; }
+
+/* =====================================================================
+   Fortune sticks (xin xăm)
+   ===================================================================== */
+.fortune-plate, .fortune-cylinder { position: absolute; display: none; }
+.fortune-plate.on { display: block; }
+.fortune-plate {              /* feather the edges into the photo */
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent), linear-gradient(to bottom, transparent, #000 10%);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent), linear-gradient(to bottom, transparent, #000 10%);
+  mask-composite: intersect;
+}
+.fortune-cylinder { inset: 0; will-change: transform; }
+.fortune-cylinder.on { display: block; }
+.scene.drawing .hotspots { visibility: hidden; }
+
+.fortune-stick {
+  position: absolute;
+  display: none;
+  background-repeat: no-repeat;
+  transform-origin: 50% 50%;
+  filter: drop-shadow(0 3px 4px rgba(0, 0, 0, 0.55));
+  will-change: transform;
+}
+.fortune-stick.on { display: block; }
+
+.fortune-tag {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 5px 14px 6px;
+  border-radius: 999px;
+  background: rgba(18, 13, 8, 0.6);
+  border: 1px solid rgba(var(--glow), 0.35);
+  font: 18px/1.2 var(--serif);
+  color: var(--gold);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 600ms ease;
+}
+.fortune-tag.on { opacity: 1; }
+
+/* The fortune slip: aged paper, red seal, printed text */
+.fortune-slip {
+  position: fixed;
+  z-index: 50;
+  top: 50%;
+  right: max(4vw, 24px);
+  width: min(420px, calc(100vw - 48px));
+  max-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-50%) scaleY(0.04);
+  transform-origin: 50% 0;
+  opacity: 0;
+  transition: transform 700ms cubic-bezier(.2, .8, .2, 1), opacity 400ms ease;
+  user-select: text;
+}
+.fortune-slip.show { transform: translateY(-50%) scaleY(1); opacity: 1; }
+.slip-paper {
+  min-height: 0;
+  overflow-y: auto;
+  padding: 22px 26px 20px;
+  border-radius: 4px;
+  color: #3b2414;
+  background:
+    radial-gradient(ellipse at 20% 10%, rgba(255, 255, 255, 0.35), transparent 55%),
+    radial-gradient(ellipse at 90% 95%, rgba(150, 100, 40, 0.18), transparent 60%),
+    linear-gradient(#f3e7c9, #ead9b3);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.55), inset 0 0 0 6px #f3e7c9, inset 0 0 0 7.5px #9c2a1e, inset 0 0 0 10px #f3e7c9, inset 0 0 0 11px rgba(156, 42, 30, 0.6);
+}
+.slip-head { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+.slip-seal {
+  flex: none;
+  width: 54px;
+  height: 54px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: radial-gradient(circle at 40% 35%, #c7392a, #8f1d14);
+  color: #fbe9c8;
+  font: 600 22px/1 var(--serif);
+  box-shadow: inset 0 0 0 2px rgba(251, 233, 200, 0.5);
+  transform: rotate(-6deg);
+}
+.slip-no { font-size: 15px; letter-spacing: 0.06em; color: #7a4a2a; }
+.slip-rank { font: 600 20px/1.2 var(--serif); color: #8f1d14; }
+.rank-thuong-thuong .slip-rank, .rank-thuong .slip-rank { color: #9c2a1e; }
+.rank-trung .slip-rank { color: #6b4a1e; }
+.rank-ha .slip-rank { color: #4d4a44; }
+.slip-title { margin: 6px 0 12px; font: 600 24px/1.25 var(--serif); color: #2e1b0e; }
+.slip-poem { margin: 0 0 14px; padding: 10px 0; border-top: 1px solid rgba(156, 42, 30, 0.35); border-bottom: 1px solid rgba(156, 42, 30, 0.35); text-align: center; }
+.slip-poem p { margin: 3px 0; font: italic 17px/1.5 var(--serif); }
+.slip-meaning { margin: 0 0 12px; font-size: 16px; line-height: 1.55; }
+.slip-advice { display: grid; grid-template-columns: auto 1fr; gap: 4px 14px; margin: 0; font-size: 15px; }
+.slip-advice dt { color: #8f1d14; font-weight: 600; }
+.slip-advice dd { margin: 0; }
+.slip-actions { display: flex; justify-content: center; gap: 10px; margin-top: 14px; }
+.slip-actions button {
+  min-width: 100px;
+  padding: 9px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(var(--glow), 0.45);
+  background: rgba(18, 13, 8, 0.6);
+  color: var(--ink);
+  font: 17px/1.2 var(--serif);
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  transition: background 250ms, border-color 250ms;
+}
+.slip-actions button.again { background: rgba(var(--glow), 0.22); }
+.slip-actions button:hover, .slip-actions button:focus-visible { background: rgba(var(--glow), 0.32); border-color: rgba(var(--glow), 0.85); outline: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .fortune-slip { transition-duration: 1ms; }
+}

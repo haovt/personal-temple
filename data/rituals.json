@@ -1,0 +1,95 @@
+{
+  "_comment": "Overlay anchors in % of each full photo (x of width, y of height). Tuned against the 2560 px images.",
+  "candles": {
+    "candle-left": {
+      "flames": [
+        [18.24, 65.0], [17.0, 66.7], [19.45, 66.8],
+        [16.4, 70.3], [17.6, 70.4], [18.4, 70.4], [19.6, 70.5],
+        [16.7, 73.7], [19.0, 73.7], [20.0, 73.8]
+      ],
+      "glow": [18.2, 69.5]
+    },
+    "candle-right": {
+      "flames": [
+        [81.2, 65.5], [80.1, 67.3], [82.3, 67.1],
+        [79.95, 70.8], [81.05, 70.6], [82.0, 70.8], [83.1, 70.7],
+        [79.95, 74.1], [82.0, 74.1], [83.1, 74.7]
+      ],
+      "glow": [81.5, 70.0]
+    },
+    "flameWidth": 0.36
+  },
+  "lotus": {
+    "image": "assets/images/overlays/lotus-pink-800.webp",
+    "crop": [0, 324, 672, 660],
+    "cropAspect": 1.018,
+    "width": 3.0,
+    "slots": [
+      { "x": 48.7, "y": 83.0, "rot": -11 },
+      { "x": 52.3, "y": 83.0, "rot": 10, "flip": true },
+      { "x": 50.5, "y": 81.6, "rot": -1, "w": 3.3 }
+    ],
+    "wiltMinutes": 1
+  },
+  "incense": {
+    "groups": [
+      { "x": 50.6, "y": 71.6, "lean": 0 },
+      { "x": 46.2, "y": 73.4, "lean": -3 },
+      { "x": 55.2, "y": 73.2, "lean": 3 }
+    ],
+    "spread": 0.55,
+    "fan": 4,
+    "length": 15,
+    "burnMinutes": 20
+  },
+  "bell": {
+    "pivot": [51, 3],
+    "outline": [
+      [42, 4.7], [46, 3.8], [56, 3.8], [60, 4.7], [63.5, 8], [65.5, 13], [66.6, 20], [67.0, 30],
+      [67.4, 45], [67.6, 60], [68, 72], [68.6, 79], [70.5, 82], [71.9, 85], [71.8, 88], [70.5, 90],
+      [66, 91.6], [58, 92.7], [51, 93], [44, 92.7], [36, 91.6], [32.5, 90], [31.3, 88], [31.4, 85],
+      [32.8, 82], [34.6, 79], [35.2, 72], [35.6, 60], [35.9, 45], [36.4, 30], [37.0, 20], [37.8, 13], [39.4, 8]
+    ]
+  },
+  "fortune": {
+    "plateSource": "assets/images/fortune/fortune-sticks-1280.webp",
+    "plateRegion": [23.2, 27, 23.0, 73],
+    "sampleWidth": 1.2,
+    "cylinder": {
+      "pivot": [34.7, 112],
+      "outline": [
+        [24.8, 48], [24.8, 41.5], [25.6, 39.8], [27.4, 39.6], [28.6, 41], [29.4, 38.6], [31.4, 38.2],
+        [33.0, 39.0], [34.4, 38.4], [35.6, 37.0], [36.6, 36.0], [37.8, 36.4], [38.6, 39.2], [40.6, 39.4],
+        [42.6, 40.4], [43.8, 39.6], [44.9, 40.6], [44.4, 48], [43.8, 60], [43.3, 70.5], [43.5, 72.5],
+        [43.4, 100], [26.0, 100], [26.0, 72.6], [26.3, 70.5], [25.7, 60]
+      ]
+    },
+    "stick": {
+      "box": [35.8, 36.0, 2.2, 36.0],
+      "outline": [[35.95, 37.6], [36.4, 36.3], [37.3, 36.2], [37.75, 37.4], [37.65, 72], [36.05, 72]],
+      "rest": [58.5, 90, -80],
+      "tag": [58.5, 82]
+    }
+  },
+  "pray": {
+    "halo": [50.0, 64.5],
+    "haloWidth": 16,
+    "wishes": [
+      "Nguyện cho gia đình bình an, mạnh khỏe",
+      "Nguyện cho cha mẹ sống lâu, an vui",
+      "Nguyện tâm luôn an tịnh, sáng suốt",
+      "Nguyện mọi việc hanh thông, thuận lợi",
+      "Nguyện học hành tấn tới, công việc vững vàng",
+      "Nguyện cho người thân luôn được bình yên",
+      "Nguyện buông bỏ phiền muộn, sống thảnh thơi",
+      "Nguyện thân tâm khỏe mạnh, an lạc",
+      "Nguyện gieo nhân lành, gặt quả ngọt",
+      "Nguyện cho muôn loài bớt khổ, được an vui",
+      "Nguyện vượt qua khó khăn bằng lòng kiên nhẫn",
+      "Nguyện sống bao dung và yêu thương nhiều hơn",
+      "Nguyện quốc thái dân an, mưa thuận gió hòa",
+      "Nguyện một năm bình an, vạn sự cát tường",
+      "Nguyện mỗi ngày sống trọn vẹn và biết ơn"
+    ]
+  }
+}

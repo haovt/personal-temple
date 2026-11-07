@@ -1,0 +1,9 @@
+# Not part of the published site
+.claude/
+docs/
+
+# OS / editor clutter
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/

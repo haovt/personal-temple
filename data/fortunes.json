@@ -1,0 +1,708 @@
+{
+  "version": 1,
+  "_comment": "Quẻ xăm viết mới cho dự án này (không sao chép từ nguồn nào). Thêm quẻ bằng cách thêm phần tử vào 'fortunes'; số quẻ không cần liên tục.",
+  "ranks": {"thuong-thuong": "Thượng thượng", "thuong": "Thượng", "trung": "Trung bình", "ha": "Hạ"},
+  "topics": {"giaDao": "Gia đạo", "congViec": "Công việc", "sucKhoe": "Sức khỏe", "taiLoc": "Tài lộc"},
+  "fortunes": [
+    {
+      "number": 1, "rank": "thuong-thuong",
+      "title": "Mặt trời lên núi",
+      "poem": ["Vầng dương vừa nhú đỉnh non cao", "Sương tan lối cũ rộng thênh thang", "Người đi thong thả không vướng bận", "Ruộng vườn xanh tốt đón mùa sang"],
+      "meaning": "Thời vận mở ra như buổi sớm mai. Việc đã chuẩn bị lâu nay bắt đầu có kết quả; cứ vững lòng mà đi.",
+      "advice": {"giaDao": "Êm ấm, thuận hòa", "congViec": "Khởi sự tốt, nên làm sớm", "sucKhoe": "Khỏe mạnh, tinh thần sáng", "taiLoc": "Lộc đến đều đặn"}
+    },
+    {
+      "number": 2, "rank": "trung",
+      "title": "Thuyền chờ con nước",
+      "poem": ["Thuyền nằm bến vắng đợi triều lên", "Chớ vội chèo khi nước còn ròng", "Một đêm trăng sáng sông đầy ắp", "Buồm căng nhẹ lướt giữa dòng trong"],
+      "meaning": "Mọi việc đúng hướng nhưng chưa đến lúc. Kiên nhẫn chờ thời, chuẩn bị chu đáo thì sẽ thuận.",
+      "advice": {"giaDao": "Bình thường, nên nhường nhịn", "congViec": "Chưa nên vội, đợi thời cơ", "sucKhoe": "Nghỉ ngơi điều độ", "taiLoc": "Giữ gìn, chưa nên đầu tư lớn"}
+    },
+    {
+      "number": 3, "rank": "thuong",
+      "title": "Hoa sen giữa đầm",
+      "poem": ["Bùn lầy chẳng nhuộm sắc sen hồng", "Gió đưa hương ngát khắp ao đầm", "Lòng ngay giữ vững như cành ngọc", "Gặp chuyện gần xa vẫn thong dong"],
+      "meaning": "Giữa hoàn cảnh chưa thuận, tấm lòng trong sạch là chỗ dựa. Người ngay thẳng sẽ được tin cậy.",
+      "advice": {"giaDao": "Hòa thuận nhờ biết lắng nghe", "congViec": "Được người trên quý mến", "sucKhoe": "Ổn định", "taiLoc": "Có lộc nhỏ, đến từ việc tốt"}
+    },
+    {
+      "number": 4, "rank": "ha",
+      "title": "Mây che đỉnh núi",
+      "poem": ["Mây xám giăng ngang lưng chừng núi", "Lối lên mờ mịt khó nhìn xa", "Ngồi nghỉ bên đường chờ gió lặng", "Nắng về soi rõ bước chân qua"],
+      "meaning": "Lúc này còn nhiều điều chưa sáng tỏ. Chưa nên quyết việc lớn; nghỉ một nhịp, mọi thứ sẽ rõ dần.",
+      "advice": {"giaDao": "Tránh lời nóng giận", "congViec": "Tạm hoãn việc quan trọng", "sucKhoe": "Giữ ấm, ngủ đủ giấc", "taiLoc": "Chi tiêu cẩn thận"}
+    },
+    {
+      "number": 5, "rank": "thuong",
+      "title": "Chim về tổ cũ",
+      "poem": ["Chiều xuống đàn chim vội cánh bay", "Về nơi tổ ấm giữa cành cây", "Bao nhiêu đường xa đều có lúc", "Quay về thấy nhà vẫn đủ đầy"],
+      "meaning": "Điều mong chờ từ xa sẽ trở về; người thân sum họp. Biết trân trọng những gì đang có thì phúc càng dày.",
+      "advice": {"giaDao": "Sum vầy, có tin vui", "congViec": "Trở lại việc cũ thuận lợi", "sucKhoe": "Tốt", "taiLoc": "Thu hồi được khoản cũ"}
+    },
+    {
+      "number": 6, "rank": "trung",
+      "title": "Giếng sâu nước trong",
+      "poem": ["Giếng sâu nước mát chẳng cần khoe", "Người khát tìm về tự nhớ lối", "Chớ lo chẳng ai hay biết đến", "Ngọt lành tự khắc có người kề"],
+      "meaning": "Việc mình làm tuy lặng lẽ nhưng có giá trị. Cứ làm tốt phần việc của mình, sẽ có người nhận ra.",
+      "advice": {"giaDao": "Bình an", "congViec": "Tiến chậm mà chắc", "sucKhoe": "Uống nhiều nước, ăn thanh đạm", "taiLoc": "Đủ dùng"}
+    },
+    {
+      "number": 7, "rank": "thuong-thuong",
+      "title": "Trăng tròn đêm rằm",
+      "poem": ["Rằm tháng trăng soi khắp xóm làng", "Đèn hoa rực rỡ ánh vàng sang", "Cầu gì như ý lòng thanh thản", "Một nhà vui vẻ tiếng cười vang"],
+      "meaning": "Quẻ viên mãn. Điều cầu mong phần nhiều được như ý; nhớ chia sẻ niềm vui với người xung quanh.",
+      "advice": {"giaDao": "Hạnh phúc, có hỷ sự", "congViec": "Thành công, được ghi nhận", "sucKhoe": "Dồi dào", "taiLoc": "Rộng rãi"}
+    },
+    {
+      "number": 8, "rank": "trung",
+      "title": "Cây non trước gió",
+      "poem": ["Cây non mới mọc đứng đầu đồi", "Gió mạnh lay cành chẳng ngã rơi", "Rễ bám sâu thêm từng ngày một", "Mai kia bóng mát rợp cả trời"],
+      "meaning": "Đang ở giai đoạn đầu, còn chịu nhiều thử thách. Bền bỉ vun gốc rễ thì về sau vững vàng.",
+      "advice": {"giaDao": "Cần vun đắp, quan tâm nhau", "congViec": "Học hỏi thêm, chưa nên đổi hướng", "sucKhoe": "Tập luyện đều", "taiLoc": "Tích lũy dần"}
+    },
+    {
+      "number": 9, "rank": "thuong",
+      "title": "Suối chảy về sông",
+      "poem": ["Suối nhỏ len qua đá với rừng", "Gặp ghềnh chẳng nản, thác chẳng dừng", "Một sớm mai kia hòa sông lớn", "Ra biển mênh mông giữa trời xuân"],
+      "meaning": "Đường đi có quanh co nhưng hướng thì đúng. Cứ mềm mỏng mà bền bỉ, việc lớn sẽ thành.",
+      "advice": {"giaDao": "Thuận, biết nhường nhau", "congViec": "Mở rộng được quan hệ", "sucKhoe": "Tốt, nên vận động", "taiLoc": "Tăng dần theo thời gian"}
+    },
+    {
+      "number": 10, "rank": "ha",
+      "title": "Đèn trước gió",
+      "poem": ["Ngọn đèn leo lét trước hiên nhà", "Gió lùa qua cửa tưởng tắt qua", "Lấy tay che chắn, lòng yên lại", "Ánh sáng còn đây chẳng cách xa"],
+      "meaning": "Có chuyện làm lòng bất an, nhưng chưa đến nỗi nào. Giữ bình tĩnh, che chắn điều quan trọng, mọi việc sẽ qua.",
+      "advice": {"giaDao": "Quan tâm người lớn tuổi", "congViec": "Giữ việc đang có", "sucKhoe": "Đừng thức khuya", "taiLoc": "Tránh cho vay mượn"}
+    },
+    {
+      "number": 11, "rank": "trung",
+      "title": "Lúa đang thì con gái",
+      "poem": ["Ruộng lúa xanh rì chưa trổ bông", "Người cày chăm chút suốt ngày ròng", "Đừng mong gặt sớm khi chưa chín", "Mùa đến tự nhiên hạt trĩu bông"],
+      "meaning": "Công sức đã bỏ ra đang lớn dần, chỉ là chưa đến mùa. Tiếp tục chăm chút, đừng sốt ruột.",
+      "advice": {"giaDao": "Ổn định", "congViec": "Kiên trì, chưa vội đổi việc", "sucKhoe": "Bình thường", "taiLoc": "Sắp có, chưa đến"}
+    },
+    {
+      "number": 12, "rank": "thuong-thuong",
+      "title": "Rồng lên mây xanh",
+      "poem": ["Mây lành năm sắc phủ trời cao", "Rồng thiêng cưỡi gió vút ngàn sao", "Việc lớn đã đến thời hưng thịnh", "Giữ đức khiêm cung phúc dồi dào"],
+      "meaning": "Thời vận rất tốt cho việc lớn. Càng thuận lợi càng nên khiêm tốn, giúp đỡ người khác.",
+      "advice": {"giaDao": "Rạng rỡ, con cháu ngoan", "congViec": "Thăng tiến", "sucKhoe": "Rất tốt", "taiLoc": "Lớn, nên làm việc thiện"}
+    },
+    {
+      "number": 13, "rank": "trung",
+      "title": "Qua cầu khỉ",
+      "poem": ["Cây cầu tre nhỏ bắc ngang kênh", "Chân bước chậm thôi, mắt nhìn lên", "Vịn tay người trước qua bờ ấy", "Đến nơi mới thấy dạ vững bền"],
+      "meaning": "Việc trước mắt cần cẩn thận từng bước. Có người đi trước chỉ dẫn thì nên nghe theo.",
+      "advice": {"giaDao": "Hỏi ý người lớn trong nhà", "congViec": "Làm kỹ, kiểm tra lại", "sucKhoe": "Cẩn thận khi đi lại", "taiLoc": "Vừa phải"}
+    },
+    {
+      "number": 14, "rank": "thuong",
+      "title": "Mưa xuân thấm đất",
+      "poem": ["Mưa xuân lất phất ướt vườn sau", "Hạt giống nảy mầm xanh mướt màu", "Chẳng ồn chẳng vội mà thấm đượm", "Ngày kia hoa nở khắp nương dâu"],
+      "meaning": "Điều tốt đến nhẹ nhàng nhưng sâu bền. Những việc nhỏ hôm nay sẽ đơm hoa về sau.",
+      "advice": {"giaDao": "Ấm áp, có tin vui nhỏ", "congViec": "Thuận, được giúp đỡ", "sucKhoe": "Hồi phục tốt", "taiLoc": "Có lộc nhỏ thường xuyên"}
+    },
+    {
+      "number": 15, "rank": "ha",
+      "title": "Đường xa đêm tối",
+      "poem": ["Đêm dài lối nhỏ vắng bóng người", "Ngẩng lên còn thấy một vì sao", "Đi chậm từng bước theo ánh ấy", "Gà gáy trời hừng đã sáng rồi"],
+      "meaning": "Thời điểm khó khăn, có lúc thấy cô đơn. Hãy bám vào một điều mình tin, bóng tối sẽ qua.",
+      "advice": {"giaDao": "Tìm người tâm sự", "congViec": "Chưa thuận, giữ sức", "sucKhoe": "Chăm sóc tinh thần", "taiLoc": "Tiết kiệm"}
+    },
+    {
+      "number": 16, "rank": "thuong",
+      "title": "Cá vượt vũ môn",
+      "poem": ["Đàn cá ngược dòng lên thác cao", "Bao lần rơi xuống lại vươn vào", "Một lần vượt được qua cửa ấy", "Sông rộng trời xanh mặc ra vào"],
+      "meaning": "Cố gắng bền bỉ sắp được đền đáp. Thi cử, thăng tiến có tin tốt nếu không bỏ cuộc.",
+      "advice": {"giaDao": "Được gia đình ủng hộ", "congViec": "Có cơ hội vượt bậc", "sucKhoe": "Tốt", "taiLoc": "Khá"}
+    },
+    {
+      "number": 17, "rank": "trung",
+      "title": "Gió lặng mặt hồ",
+      "poem": ["Gió lặng hồ êm bóng núi in", "Lòng người phẳng lặng tựa gương nhìn", "Muốn thấy rõ ràng điều đúng sai", "Hãy để tâm mình được lặng im"],
+      "meaning": "Đang có điều cần quyết định. Hãy để lòng lắng xuống trước rồi hẵng chọn, câu trả lời sẽ rõ.",
+      "advice": {"giaDao": "Bình yên", "congViec": "Suy nghĩ kỹ rồi hãy làm", "sucKhoe": "Nên thiền, đi bộ", "taiLoc": "Không thay đổi nhiều"}
+    },
+    {
+      "number": 18, "rank": "thuong-thuong",
+      "title": "Vườn xuân đầy quả",
+      "poem": ["Vườn xưa ai trồng đã trổ hoa", "Quả ngọt treo cành khắp gần xa", "Gieo nhân lành trước, nay hái quả", "Chia cùng hàng xóm ngọt cả nhà"],
+      "meaning": "Quả ngọt từ những việc tốt đã làm. Phúc đức đầy đủ; chia sẻ ra thì phúc càng thêm.",
+      "advice": {"giaDao": "Đông vui, đầm ấm", "congViec": "Thu hoạch kết quả", "sucKhoe": "Khỏe", "taiLoc": "Dồi dào"}
+    },
+    {
+      "number": 19, "rank": "trung",
+      "title": "Ngựa nghỉ chân",
+      "poem": ["Ngựa chạy đường dài đã mỏi chân", "Bên suối dừng chân uống nước trong", "Nghỉ ngơi đủ sức rồi lên tiếp", "Đường xa còn đó chẳng phụ lòng"],
+      "meaning": "Đã cố gắng nhiều, nay cần nghỉ ngơi. Nghỉ đúng lúc không phải là lùi bước.",
+      "advice": {"giaDao": "Dành thời gian cho người nhà", "congViec": "Sắp xếp lại, giảm bớt việc", "sucKhoe": "Cần nghỉ ngơi", "taiLoc": "Ổn"}
+    },
+    {
+      "number": 20, "rank": "thuong",
+      "title": "Chuông chùa buổi sớm",
+      "poem": ["Tiếng chuông vọng xuống cả thôn xa", "Người dậy sớm mai quét sân nhà", "Lòng nghe như được ai gọi khẽ", "Buông hết muộn phiền bước nhẹ qua"],
+      "meaning": "Một khởi đầu mới thanh thản. Bỏ lại chuyện cũ, mỗi ngày làm một việc tốt thì mọi sự hanh thông.",
+      "advice": {"giaDao": "Hòa hợp", "congViec": "Khởi đầu mới thuận lợi", "sucKhoe": "Tinh thần sảng khoái", "taiLoc": "Ổn định, có quý nhân"}
+    },
+    {
+      "number": 21, "rank": "ha",
+      "title": "Thuyền gặp sóng",
+      "poem": ["Giữa sông sóng nổi chẳng ngờ đâu", "Thuyền nhỏ chòng chành mãi trước sau", "Hạ buồm neo lại chờ êm gió", "Vững tay chèo sẽ tới bến nào"],
+      "meaning": "Có biến động bất ngờ. Đừng chống chọi quá sức; tạm dừng, giữ an toàn, đợi sóng yên.",
+      "advice": {"giaDao": "Nhường nhịn để tránh xung đột", "congViec": "Giữ vững, đừng mạo hiểm", "sucKhoe": "Cẩn thận khi đi xa", "taiLoc": "Tránh đầu tư lúc này"}
+    },
+    {
+      "number": 22, "rank": "thuong",
+      "title": "Bạn hiền gặp gỡ",
+      "poem": ["Đường xa bỗng gặp bạn đồng hành", "Chung một ấm trà dưới bóng xanh", "Chuyện khó chia đôi thành chuyện dễ", "Có nhau gánh nặng hóa nhẹ tênh"],
+      "meaning": "Quý nhân xuất hiện. Hợp tác, kết bạn trong thời gian này mang lại nhiều điều tốt.",
+      "advice": {"giaDao": "Có khách quý đến chơi", "congViec": "Hợp tác thuận lợi", "sucKhoe": "Tốt", "taiLoc": "Nhờ bạn bè mà có"}
+    },
+    {
+      "number": 23, "rank": "trung",
+      "title": "Trăng khuyết đầu tháng",
+      "poem": ["Đầu tháng trăng non mảnh như tơ", "Đêm sau đầy thêm một chút chờ", "Chẳng ai trách trăng sao chưa sáng", "Mười lăm tròn đẹp giữa trời mơ"],
+      "meaning": "Mọi việc mới bắt đầu, đang lớn lên từng ngày. Đừng so với người đã thành; cứ đều đặn tiến tới.",
+      "advice": {"giaDao": "Ấm dần lên", "congViec": "Tiến từng bước", "sucKhoe": "Đang tốt lên", "taiLoc": "Tăng dần"}
+    },
+    {
+      "number": 24, "rank": "thuong-thuong",
+      "title": "Phượng hót ngô đồng",
+      "poem": ["Ngô đồng cành biếc đón chim sang", "Tiếng phượng ngân xa khắp xóm làng", "Đức tốt tự nhiên người tìm đến", "Một nhà hưng thịnh phúc an khang"],
+      "meaning": "Quẻ rất tốt về danh tiếng và các mối quan hệ. Việc hôn nhân, hợp tác đều thuận.",
+      "advice": {"giaDao": "Hỷ sự, cưới hỏi tốt", "congViec": "Được trọng dụng", "sucKhoe": "An khang", "taiLoc": "Thịnh vượng"}
+    },
+    {
+      "number": 25, "rank": "trung",
+      "title": "Ngã ba đường",
+      "poem": ["Đứng giữa ngã ba nắng xế chiều", "Đường nào cũng có chút cheo leo", "Hỏi lòng mình muốn đi đâu tới", "Chọn rồi cứ bước chẳng cần theo"],
+      "meaning": "Có lựa chọn cần đưa ra. Không có lối nào hoàn hảo; chọn theo điều mình thật lòng mong muốn.",
+      "advice": {"giaDao": "Bàn bạc cùng người thân", "congViec": "Cân nhắc rồi quyết dứt khoát", "sucKhoe": "Bình thường", "taiLoc": "Tùy lựa chọn"}
+    },
+    {
+      "number": 26, "rank": "ha",
+      "title": "Hạn hán chờ mưa",
+      "poem": ["Đồng khô nứt nẻ đợi mây về", "Người nông kiên nhẫn vẫn ra đê", "Giữ từng gáo nước cho cây sống", "Mưa xuống mùa sau lúa lại xuê"],
+      "meaning": "Giai đoạn thiếu thốn, việc gì cũng chậm. Giữ gìn những gì quan trọng nhất; thời khó rồi sẽ qua.",
+      "advice": {"giaDao": "Đùm bọc nhau", "congViec": "Giữ sức, đừng dàn trải", "sucKhoe": "Ăn uống điều độ", "taiLoc": "Thắt chặt chi tiêu"}
+    },
+    {
+      "number": 27, "rank": "thuong",
+      "title": "Nhà ấm lửa hồng",
+      "poem": ["Ngoài trời mưa gió lạnh căm căm", "Trong nhà bếp lửa đỏ hồng ấm", "Bát cơm canh nóng cùng chia sẻ", "Lòng người sum họp chẳng xa xăm"],
+      "meaning": "Gia đình là chỗ dựa vững chắc. Việc ngoài có thể còn trắc trở nhưng trong nhà bình an, đủ đầy.",
+      "advice": {"giaDao": "Rất tốt", "congViec": "Ổn, đừng mang việc về nhà", "sucKhoe": "Tốt", "taiLoc": "Đủ đầy"}
+    },
+    {
+      "number": 28, "rank": "thuong-thuong",
+      "title": "Sen nở cửa thiền",
+      "poem": ["Ao trước cửa thiền sen nở hoa", "Hương bay thoảng nhẹ khắp sân nhà", "Tâm an thì việc đều an cả", "Phúc lành tự đến chẳng đâu xa"],
+      "meaning": "Quẻ an lành trọn vẹn. Giữ tâm thanh tịnh, sống tử tế thì mọi điều tốt sẽ tự đến.",
+      "advice": {"giaDao": "An vui", "congViec": "Thuận buồm xuôi gió", "sucKhoe": "Thân tâm an lạc", "taiLoc": "Phúc lộc đầy đủ"}
+    },
+    {
+      "number": 29, "rank": "thuong",
+      "title": "Gió thuận buồm căng",
+      "poem": ["Gió nồm thổi nhẹ cánh buồm nâu", "Thuyền xuôi một mạch tới bến sâu", "Người chèo chẳng phải ra sức mấy", "Trời thuận lòng người hẹn gặp nhau"],
+      "meaning": "Hoàn cảnh đang ủng hộ bạn. Việc đã định cứ tiến hành, sẽ gặp nhiều thuận lợi.",
+      "advice": {"giaDao": "Thuận hòa, có tin vui", "congViec": "Tiến triển nhanh", "sucKhoe": "Tốt", "taiLoc": "Có lời"}
+    },
+    {
+      "number": 30, "rank": "trung",
+      "title": "Mưa phùn tháng hai",
+      "poem": ["Mưa phùn lất phất suốt tháng hai", "Đường trơn chân bước chẳng vội ai", "Áo ướt đôi phần đừng than thở", "Nắng xuân rồi cũng đến ngày mai"],
+      "meaning": "Có chút phiền toái nhỏ kéo dài, không đáng lo. Bước chậm, cẩn thận, rồi sẽ qua.",
+      "advice": {"giaDao": "Nhẫn nại với nhau", "congViec": "Chậm mà chắc", "sucKhoe": "Giữ ấm cổ họng", "taiLoc": "Bình thường"}
+    },
+    {
+      "number": 31, "rank": "ha",
+      "title": "Lá vàng trước gió",
+      "poem": ["Cành khô lá úa rụng ven đường", "Gió heo may thổi lạnh hơi sương", "Lá rơi về cội nuôi mầm mới", "Xuân sang cây lại biếc muôn phương"],
+      "meaning": "Có điều phải buông bỏ, lòng thấy tiếc nuối. Nhưng mất cái cũ là để dành chỗ cho cái mới.",
+      "advice": {"giaDao": "Thông cảm, đừng trách móc", "congViec": "Chấp nhận thay đổi", "sucKhoe": "Nghỉ ngơi, bồi bổ", "taiLoc": "Có hao hụt, nên dè dặt"}
+    },
+    {
+      "number": 32, "rank": "thuong-thuong",
+      "title": "Hoa mai nở sớm",
+      "poem": ["Sân nhà mai nở sắc vàng tươi", "Tết đến xuân về rộn tiếng cười", "Một năm khởi sự đều như ý", "Phúc lộc theo về khắp mọi nơi"],
+      "meaning": "Khởi đầu đại cát. Việc mới bắt tay vào đều thuận, năm nay nhiều may mắn.",
+      "advice": {"giaDao": "Sum họp, đông vui", "congViec": "Mở việc mới rất tốt", "sucKhoe": "Khỏe mạnh", "taiLoc": "Tiền vào như nước"}
+    },
+    {
+      "number": 33, "rank": "thuong",
+      "title": "Cò bay thẳng cánh",
+      "poem": ["Đồng xanh thẳng cánh một đàn cò", "Lúa lên đều hạt chẳng phải lo", "Người chăm ruộng cũ nay được hưởng", "Gặt về thóc chất đầy bồ to"],
+      "meaning": "Công sức đều đặn bấy lâu nay sinh lợi. Cứ giữ nếp làm ăn chăm chỉ.",
+      "advice": {"giaDao": "Ấm no", "congViec": "Ổn định, có thưởng", "sucKhoe": "Tốt", "taiLoc": "Tăng đều"}
+    },
+    {
+      "number": 34, "rank": "trung",
+      "title": "Gương mờ hơi nước",
+      "poem": ["Gương soi mờ đục bởi hơi sương", "Lau đi một chút lại tỏ tường", "Lòng người cũng vậy khi phiền não", "Lắng lại tự nhiên thấy rõ đường"],
+      "meaning": "Đang có chuyện làm rối trí. Bình tâm lại, mọi việc sẽ rõ ràng.",
+      "advice": {"giaDao": "Nói chuyện thẳng thắn", "congViec": "Xem lại kế hoạch", "sucKhoe": "Ngủ đủ, bớt lo nghĩ", "taiLoc": "Chưa nên quyết khoản lớn"}
+    },
+    {
+      "number": 35, "rank": "ha",
+      "title": "Nhà dột gặp mưa",
+      "poem": ["Mái tranh dột nát giữa mưa đêm", "Hứng nước cả nhà chẳng ngủ yên", "Sáng ra cùng vá từng gian một", "Mưa sau nhà vững lại bình yên"],
+      "meaning": "Có việc hỏng hóc, sự cố cần sửa chữa. Đồng lòng khắc phục thì sau sẽ vững hơn trước.",
+      "advice": {"giaDao": "Cả nhà cùng chung tay", "congViec": "Sửa sai sót, đừng đổ lỗi", "sucKhoe": "Phòng cảm lạnh", "taiLoc": "Có khoản chi bất ngờ"}
+    },
+    {
+      "number": 36, "rank": "thuong-thuong",
+      "title": "Đường mở thênh thang",
+      "poem": ["Đá chắn đường xưa đã dọn quang", "Đường về rộng mở nắng chan chan", "Người đi sải bước không vướng víu", "Muôn dặm xa xôi hóa gần gang"],
+      "meaning": "Trở ngại đã qua, con đường phía trước rộng mở. Thời điểm rất tốt để đi xa, mở rộng.",
+      "advice": {"giaDao": "Vui vẻ", "congViec": "Thăng tiến", "sucKhoe": "Khỏe khoắn", "taiLoc": "Phát đạt"}
+    },
+    {
+      "number": 37, "rank": "thuong",
+      "title": "Ong làm mật",
+      "poem": ["Ong chăm hút nhụy khắp vườn hoa", "Góp nhặt ngày ngày chẳng quản xa", "Tổ nhỏ dần đầy hũ mật ngọt", "Chia cho hàng xóm khắp gần xa"],
+      "meaning": "Siêng năng tích lũy từng chút sẽ thành của để dành. Nhớ sẻ chia thì phúc thêm dày.",
+      "advice": {"giaDao": "Hòa thuận", "congViec": "Chăm chỉ được ghi nhận", "sucKhoe": "Tốt", "taiLoc": "Tích lũy khá"}
+    },
+    {
+      "number": 38, "rank": "trung",
+      "title": "Trăng lẩn sau mây",
+      "poem": ["Trăng rằm lẩn khuất đám mây trôi", "Lúc tỏ lúc mờ giữa trời đôi", "Mây qua trăng sáng như vốn có", "Việc gì cũng vậy chớ bồi hồi"],
+      "meaning": "Có lúc điều tốt bị che khuất tạm thời. Đừng nghi ngờ bản thân; mây sẽ trôi qua.",
+      "advice": {"giaDao": "Tin tưởng nhau", "congViec": "Hiểu lầm sẽ được giải", "sucKhoe": "Bình thường", "taiLoc": "Ổn"}
+    },
+    {
+      "number": 39, "rank": "ha",
+      "title": "Cầu gãy giữa sông",
+      "poem": ["Cầu tre gãy nhịp giữa sông sâu", "Người qua đứng lại bến chờ lâu", "Đợi đò sang nước, đừng liều lội", "Bình an hơn cả tới nơi đâu"],
+      "meaning": "Lối đi quen tạm thời bị cắt. Đừng liều lĩnh; tìm cách khác hoặc chờ người giúp.",
+      "advice": {"giaDao": "Ở bên người thân", "congViec": "Tránh mạo hiểm", "sucKhoe": "Cẩn thận khi đi lại", "taiLoc": "Không nên vay mượn"}
+    },
+    {
+      "number": 40, "rank": "thuong-thuong",
+      "title": "Lộc biếc đầu cành",
+      "poem": ["Đầu cành chồi lộc biếc xanh non", "Mưa xuân tưới mát khắp vườn con", "Cây già đâm nhánh, cây non lớn", "Nhà nhà trên thuận dưới vuông tròn"],
+      "meaning": "Phúc lộc nảy nở khắp nhà, cả người già lẫn trẻ nhỏ đều được an vui.",
+      "advice": {"giaDao": "Có tin mừng con cháu", "congViec": "Có lộc bất ngờ", "sucKhoe": "Người già khỏe", "taiLoc": "Lộc đầu năm"}
+    },
+    {
+      "number": 41, "rank": "thuong",
+      "title": "Đèn lồng soi lối",
+      "poem": ["Đêm dài ai thắp ngọn đèn lồng", "Soi đường người đến chốn thong dong", "Lối quanh co hóa thành dễ bước", "Nhờ ơn người dẫn ấm cả lòng"],
+      "meaning": "Có người dẫn đường, chỉ lối. Hãy lắng nghe lời khuyên của người đi trước.",
+      "advice": {"giaDao": "Nghe lời cha mẹ", "congViec": "Có thầy giỏi, quý nhân", "sucKhoe": "Tốt", "taiLoc": "Khá"}
+    },
+    {
+      "number": 42, "rank": "trung",
+      "title": "Cối xay lúa",
+      "poem": ["Cối xay kẽo kẹt suốt đêm thâu", "Từng vòng chậm rãi chẳng vội đâu", "Thóc vàng thành gạo nhờ bền sức", "Chịu khó từng vòng gạo trắng phau"],
+      "meaning": "Việc lặp đi lặp lại, có lúc nhàm chán, nhưng đều đặn sẽ ra thành quả.",
+      "advice": {"giaDao": "Êm đềm", "congViec": "Đều đặn, kiên trì", "sucKhoe": "Giữ nếp sinh hoạt", "taiLoc": "Vừa đủ"}
+    },
+    {
+      "number": 43, "rank": "ha",
+      "title": "Chim lạc đàn",
+      "poem": ["Chiều tà chim lạc giữa trời xa", "Kêu thương tìm bạn khắp bao la", "Bay thấp theo dòng sông sẽ thấy", "Đàn đang chờ đợi phía quê nhà"],
+      "meaning": "Cảm thấy lạc lõng, xa cách. Quay về với những người thân thuộc, sẽ tìm lại chỗ dựa.",
+      "advice": {"giaDao": "Gọi điện về nhà", "congViec": "Chưa hòa nhập, cần thời gian", "sucKhoe": "Chăm sóc tinh thần", "taiLoc": "Tạm ổn"}
+    },
+    {
+      "number": 44, "rank": "thuong-thuong",
+      "title": "Thuyền đầy cá",
+      "poem": ["Sớm mai thuyền nhỏ ra khơi xa", "Chiều về khoang cá ánh bạc ngà", "Cả làng ra bến cùng vui đón", "Mẻ lưới đầu mùa lộc cả nhà"],
+      "meaning": "Thu hoạch lớn, làm ăn phát đạt. Niềm vui được chia sẻ cùng nhiều người.",
+      "advice": {"giaDao": "Vui vầy", "congViec": "Kinh doanh thắng lớn", "sucKhoe": "Khỏe", "taiLoc": "Rất tốt"}
+    },
+    {
+      "number": 45, "rank": "thuong",
+      "title": "Ở hiền gặp lành",
+      "poem": ["Giúp người lúc khó chẳng đòi công", "Ai hay việc nhỏ hóa tình đồng", "Một mai mình gặp cơn gian khó", "Có người đưa tay giữa dòng sông"],
+      "meaning": "Việc tốt đã làm sẽ quay về giúp mình. Cứ tiếp tục sống tử tế.",
+      "advice": {"giaDao": "Hòa thuận", "congViec": "Được giúp đúng lúc", "sucKhoe": "Tốt", "taiLoc": "Có người hỗ trợ"}
+    },
+    {
+      "number": 46, "rank": "trung",
+      "title": "Bếp chưa đỏ lửa",
+      "poem": ["Bếp than mới nhóm khói còn cay", "Kiên nhẫn thổi thêm, chớ vội tay", "Than hồng bén lửa nồi cơm chín", "Chậm một chút thôi bữa đủ đầy"],
+      "meaning": "Mọi thứ mới bắt đầu, còn vất vả. Đừng nản, chỉ cần thêm chút thời gian và công sức.",
+      "advice": {"giaDao": "Kiên nhẫn với nhau", "congViec": "Đang khởi động", "sucKhoe": "Ăn uống đúng giờ", "taiLoc": "Chưa có ngay"}
+    },
+    {
+      "number": 47, "rank": "ha",
+      "title": "Sương muối đầu đông",
+      "poem": ["Sương muối đầu đông phủ ruộng rau", "Lá non co lại úa đôi màu", "Che phủ cho cây qua ngày rét", "Nắng về luống cũ lại xanh mau"],
+      "meaning": "Thời tiết khắc nghiệt, việc dễ bị ảnh hưởng. Bảo vệ những gì non trẻ, đợi lúc thuận.",
+      "advice": {"giaDao": "Chăm lo trẻ nhỏ", "congViec": "Giữ những gì đang có", "sucKhoe": "Giữ ấm cẩn thận", "taiLoc": "Thận trọng"}
+    },
+    {
+      "number": 48, "rank": "thuong-thuong",
+      "title": "Bảng vàng đề tên",
+      "poem": ["Trường thi bảng yết sáng hôm nay", "Tên mình đứng giữa chữ vàng bay", "Bao năm đèn sách nay thành quả", "Cha mẹ mừng vui rạng mặt mày"],
+      "meaning": "Rất tốt cho thi cử, học hành, xin việc. Nỗ lực lâu nay được đền đáp xứng đáng.",
+      "advice": {"giaDao": "Cha mẹ vui lòng", "congViec": "Đỗ đạt, được nhận", "sucKhoe": "Tốt", "taiLoc": "Có thưởng"}
+    },
+    {
+      "number": 49, "rank": "thuong",
+      "title": "Hai bờ nối nhịp",
+      "poem": ["Hai bờ cách trở một dòng sông", "Nay bắc cầu tre nối nhịp đồng", "Người qua kẻ lại vui chào hỏi", "Xa cách bao năm hóa thong dong"],
+      "meaning": "Mối quan hệ từng xa cách nay được hàn gắn. Tốt cho hòa giải, hợp tác.",
+      "advice": {"giaDao": "Hòa giải được bất đồng", "congViec": "Hợp tác thuận lợi", "sucKhoe": "Tốt", "taiLoc": "Có lợi từ quan hệ"}
+    },
+    {
+      "number": 50, "rank": "trung",
+      "title": "Ngựa hay đường dài",
+      "poem": ["Đường xa mới biết sức ngựa hay", "Phi nước đại sớm mỏi chân ngay", "Giữ nhịp đều đều qua đèo dốc", "Tới đích vẫn còn sức dẻo dai"],
+      "meaning": "Việc dài hơi, cần phân bổ sức. Đừng đốt hết năng lượng lúc đầu.",
+      "advice": {"giaDao": "Chia sẻ việc nhà", "congViec": "Lên kế hoạch dài hạn", "sucKhoe": "Tập thể dục đều", "taiLoc": "Đầu tư dài hạn tốt hơn"}
+    },
+    {
+      "number": 51, "rank": "ha",
+      "title": "Giông mùa hạ",
+      "poem": ["Trưa hè giông nổi giữa thênh thang", "Sấm chớp liên hồi gió ngổn ngang", "Khép cửa vào nhà ngồi lặng đợi", "Giông tan trời lại sáng rỡ ràng"],
+      "meaning": "Có biến động bất ngờ nhưng ngắn. Tạm lánh, đừng tranh cãi lúc nóng giận.",
+      "advice": {"giaDao": "Tránh cãi vã", "congViec": "Hoãn quyết định lớn vài hôm", "sucKhoe": "Cẩn thận khi trời xấu", "taiLoc": "Tạm giữ tiền"}
+    },
+    {
+      "number": 52, "rank": "thuong-thuong",
+      "title": "Nắng sớm sân chùa",
+      "poem": ["Sân chùa nắng sớm trải vàng tơ", "Chuông vọng hương bay giữa sớm mơ", "Lòng thành một nén dâng lên Phật", "Cầu gì cũng được thỏa mong chờ"],
+      "meaning": "Lòng thành được đáp lại. Điều cầu nguyện phần lớn như ý; nhớ giữ tâm thiện lành.",
+      "advice": {"giaDao": "An vui", "congViec": "Như ý", "sucKhoe": "Thân tâm nhẹ nhàng", "taiLoc": "Đủ đầy"}
+    },
+    {
+      "number": 53, "rank": "thuong",
+      "title": "Vườn rau sau nhà",
+      "poem": ["Sau nhà một mảnh vườn rau xanh", "Sớm tưới chiều vun đất mát lành", "Bữa cơm đạm bạc mà no ấm", "Giàu sang chẳng sánh được an lành"],
+      "meaning": "Hạnh phúc nằm ở những điều giản dị. Biết đủ thì luôn thấy đủ.",
+      "advice": {"giaDao": "Ấm êm", "congViec": "Ổn định", "sucKhoe": "Ăn uống lành mạnh", "taiLoc": "Đủ dùng, có dư"}
+    },
+    {
+      "number": 54, "rank": "trung",
+      "title": "Chờ đò bến vắng",
+      "poem": ["Bến vắng chiều buông đợi chuyến đò", "Người đi ngóng mãi dạ âu lo", "Đò sang đúng lúc trăng vừa mọc", "Gió êm thuyền nhẹ lướt qua bờ"],
+      "meaning": "Việc đang chờ đợi sẽ đến đúng lúc của nó. Thêm chút kiên nhẫn.",
+      "advice": {"giaDao": "Bình thường", "congViec": "Đợi tin", "sucKhoe": "Ổn", "taiLoc": "Sắp có"}
+    },
+    {
+      "number": 55, "rank": "ha",
+      "title": "Giếng cạn mùa khô",
+      "poem": ["Giếng làng cạn đáy giữa mùa khan", "Gánh nước đường xa mỏi cả làng", "Dè sẻn từng gàu chia đều đặn", "Mưa về giếng lại nước đầy tràn"],
+      "meaning": "Nguồn lực đang hạn chế. Tiết kiệm, chia sẻ công bằng, thời khó sẽ qua.",
+      "advice": {"giaDao": "Chia sẻ, nhường nhịn", "congViec": "Cắt bớt việc không cần thiết", "sucKhoe": "Uống đủ nước", "taiLoc": "Tiết kiệm"}
+    },
+    {
+      "number": 56, "rank": "thuong-thuong",
+      "title": "Song hỷ trước ngõ",
+      "poem": ["Trước ngõ đèn hoa thắp rỡ ràng", "Họ hàng chúc tụng tiếng reo vang", "Hai nhà kết nghĩa thành thân thuộc", "Phúc đến song đôi giữa xóm làng"],
+      "meaning": "Có hỷ sự, việc vui đến dồn dập. Rất tốt cho cưới hỏi, sinh con, về nhà mới.",
+      "advice": {"giaDao": "Hỷ sự", "congViec": "Thuận lợi gấp đôi", "sucKhoe": "Khỏe mạnh", "taiLoc": "Rộng rãi"}
+    },
+    {
+      "number": 57, "rank": "thuong",
+      "title": "Tre già măng mọc",
+      "poem": ["Bụi tre đầu ngõ đứng hiên ngang", "Măng non đội đất mọc từng hàng", "Lớp trước che chở cho lớp sau", "Bóng mát nối nhau rợp cả làng"],
+      "meaning": "Thế hệ trước nâng đỡ thế hệ sau. Tốt cho việc học hỏi, truyền nghề, chăm sóc con cháu.",
+      "advice": {"giaDao": "Con cháu ngoan", "congViec": "Có người dìu dắt", "sucKhoe": "Tốt", "taiLoc": "Ổn định lâu dài"}
+    },
+    {
+      "number": 58, "rank": "trung",
+      "title": "Bàn cờ thế khó",
+      "poem": ["Bàn cờ thế khó giữa ván dài", "Nước nào đi tiếp cũng chông gai", "Lùi một bước thôi nhìn toàn cục", "Nước hay tự đến chẳng nhờ ai"],
+      "meaning": "Đang bế tắc. Lùi lại, nhìn toàn cảnh, cách giải sẽ hiện ra.",
+      "advice": {"giaDao": "Bàn bạc cùng nhau", "congViec": "Thay đổi cách tiếp cận", "sucKhoe": "Nghỉ ngơi đầu óc", "taiLoc": "Giữ nguyên"}
+    },
+    {
+      "number": 59, "rank": "ha",
+      "title": "Đá chắn dòng khe",
+      "poem": ["Đá lớn nằm ngang giữa suối khe", "Nước dồn cuộn xoáy lối chẳng về", "Nước mềm lách nhẹ quanh chân đá", "Chảy tiếp xuôi dòng ra đồng quê"],
+      "meaning": "Gặp trở ngại cứng nhắc. Đừng đối đầu trực diện, hãy mềm mỏng tìm lối vòng.",
+      "advice": {"giaDao": "Mềm mỏng với người lớn", "congViec": "Tránh đối đầu", "sucKhoe": "Giữ bình tĩnh", "taiLoc": "Chưa thuận"}
+    },
+    {
+      "number": 60, "rank": "thuong-thuong",
+      "title": "Ngọc sáng trong đá",
+      "poem": ["Đá thô nằm giữa núi chon von", "Thợ khéo mài lâu hiện ngọc tròn", "Sáng rực một vùng ai cũng quý", "Giá trị bên trong mãi vẫn còn"],
+      "meaning": "Giá trị thật của bạn được phát hiện và trân trọng. Thời điểm tỏa sáng.",
+      "advice": {"giaDao": "Được yêu thương", "congViec": "Được trọng dụng, thăng chức", "sucKhoe": "Tốt", "taiLoc": "Rất khá"}
+    },
+    {
+      "number": 61, "rank": "thuong",
+      "title": "Đồng vàng mùa gặt",
+      "poem": ["Đồng vàng trĩu hạt gió hương bay", "Cả xóm ra đồng gặt suốt ngày", "Tiếng cười rộn rã trên bờ ruộng", "Bao công bón xới đến hôm nay"],
+      "meaning": "Đến mùa thu hoạch. Những gì gieo trồng đã chín, hãy thu về.",
+      "advice": {"giaDao": "Đông vui", "congViec": "Có kết quả", "sucKhoe": "Tốt, đừng làm quá sức", "taiLoc": "Thu vào"}
+    },
+    {
+      "number": 62, "rank": "trung",
+      "title": "Nước chảy đá mòn",
+      "poem": ["Một giọt rơi rồi giọt nữa rơi", "Đá xanh năm tháng lõm dần thôi", "Sức mình tuy nhỏ mà bền bỉ", "Việc khó bao nhiêu cũng tới nơi"],
+      "meaning": "Không cần sức mạnh lớn, chỉ cần bền bỉ. Việc khó rồi sẽ thành.",
+      "advice": {"giaDao": "Kiên nhẫn với người thân", "congViec": "Bền bỉ sẽ đạt", "sucKhoe": "Duy trì thói quen tốt", "taiLoc": "Tích lũy nhỏ"}
+    },
+    {
+      "number": 63, "rank": "ha",
+      "title": "Lửa gần rơm",
+      "poem": ["Rơm khô chất đống cạnh bếp than", "Một tàn lửa nhỏ dễ lan tràn", "Dọn rơm ra xa trước khi nhóm", "Cẩn thận hôm nay được bình an"],
+      "meaning": "Có nguy cơ tiềm ẩn từ những điều nhỏ. Phòng ngừa trước, đừng để chuyện nhỏ thành lớn.",
+      "advice": {"giaDao": "Tránh lời nói nóng", "congViec": "Kiểm tra kỹ giấy tờ", "sucKhoe": "Cẩn thận lửa, điện, bếp núc", "taiLoc": "Không đầu tư mạo hiểm"}
+    },
+    {
+      "number": 64, "rank": "thuong-thuong",
+      "title": "Cầu vồng sau mưa",
+      "poem": ["Mưa tạnh cầu vồng bắc ngang sông", "Bảy màu rực rỡ giữa trời trong", "Bao ngày u ám nay tan hết", "Niềm vui trọn vẹn đến ngập lòng"],
+      "meaning": "Sau thời gian khó khăn là niềm vui lớn. Mọi chuyện chuyển biến rất tốt.",
+      "advice": {"giaDao": "Hạnh phúc trở lại", "congViec": "Khởi sắc mạnh", "sucKhoe": "Bình phục", "taiLoc": "Khấm khá"}
+    },
+    {
+      "number": 65, "rank": "thuong",
+      "title": "Bạn cũ thăm nhà",
+      "poem": ["Chiều nay bạn cũ ghé thăm nhà", "Chén trà kể chuyện tháng năm qua", "Tình xưa nghĩa cũ không phai nhạt", "Gặp nhau thêm quý những ngày xa"],
+      "meaning": "Người cũ trở lại mang tin tốt hoặc cơ hội. Trân trọng các mối quan hệ lâu năm.",
+      "advice": {"giaDao": "Có khách đến", "congViec": "Cơ hội từ người quen", "sucKhoe": "Tinh thần vui", "taiLoc": "Khá"}
+    },
+    {
+      "number": 66, "rank": "trung",
+      "title": "Hạt giống trong đất",
+      "poem": ["Hạt giống vùi sâu đất tối tăm", "Bao ngày lặng lẽ chẳng ai thăm", "Bên trong rễ đã đâm sâu xuống", "Một sớm mầm xanh nhú âm thầm"],
+      "meaning": "Kết quả chưa thấy nhưng mọi thứ đang âm thầm tiến triển. Hãy tin vào quá trình.",
+      "advice": {"giaDao": "Bình yên", "congViec": "Đang tiến triển", "sucKhoe": "Đang hồi phục", "taiLoc": "Sắp có"}
+    },
+    {
+      "number": 67, "rank": "ha",
+      "title": "Áo mỏng trời rét",
+      "poem": ["Gió bấc tràn về rét cắt da", "Áo đơn mỏng mảnh bước đường xa", "Mượn tạm khăn len của người bạn", "Ấm lại đôi phần đến được nhà"],
+      "meaning": "Đang thiếu thốn, chưa chuẩn bị đủ. Đừng ngại nhờ giúp đỡ.",
+      "advice": {"giaDao": "Nhờ người thân hỗ trợ", "congViec": "Chuẩn bị thêm rồi hãy làm", "sucKhoe": "Giữ ấm, phòng cảm", "taiLoc": "Eo hẹp"}
+    },
+    {
+      "number": 68, "rank": "thuong-thuong",
+      "title": "Ruộng sâu trâu khỏe",
+      "poem": ["Ruộng sâu trâu khỏe lúa đầy đồng", "Nhà ngói sân gạch mái hiên cong", "Con cháu đông vui quanh mâm cỗ", "Ông bà mạnh khỏe phúc thêm chồng"],
+      "meaning": "Phúc đức đầy đủ, nhà cửa sung túc, con cháu hiếu thảo.",
+      "advice": {"giaDao": "Đại phúc", "congViec": "Vững vàng", "sucKhoe": "Trường thọ", "taiLoc": "Sung túc"}
+    },
+    {
+      "number": 69, "rank": "thuong",
+      "title": "Tiếng sáo diều",
+      "poem": ["Chiều quê diều thả sáo vi vu", "Gió nâng cánh mỏng giữa trời thu", "Dây giữ vững tay diều bay mãi", "Tự do mà chẳng lạc xa mù"],
+      "meaning": "Được tự do làm điều mình thích, nhưng nhớ giữ gốc rễ và nguyên tắc.",
+      "advice": {"giaDao": "Vui vẻ", "congViec": "Được tự chủ", "sucKhoe": "Thư thái", "taiLoc": "Ổn"}
+    },
+    {
+      "number": 70, "rank": "trung",
+      "title": "Đòn gánh hai đầu",
+      "poem": ["Đòn gánh hai đầu nặng như nhau", "Bước đi mới vững chẳng nghiêng đâu", "Một bên nặng quá vai sẽ mỏi", "Giữ cho cân đối bước đi lâu"],
+      "meaning": "Cần cân bằng giữa công việc và gia đình, giữa cho và nhận.",
+      "advice": {"giaDao": "Dành thời gian cho nhà", "congViec": "Đừng ôm đồm", "sucKhoe": "Nghỉ ngơi hợp lý", "taiLoc": "Thu chi cân đối"}
+    },
+    {
+      "number": 71, "rank": "ha",
+      "title": "Nắng tắt chiều tà",
+      "poem": ["Nắng chiều đã tắt phía non xa", "Người đi đường vắng vội về nhà", "Đêm nay nghỉ lại bên bếp lửa", "Sáng mai đi tiếp chẳng muộn mà"],
+      "meaning": "Hôm nay chưa thuận, nên dừng lại nghỉ ngơi. Ngày mai sẽ tốt hơn.",
+      "advice": {"giaDao": "Về sớm với gia đình", "congViec": "Gác việc sang mai", "sucKhoe": "Ngủ sớm", "taiLoc": "Đừng chi tiêu lúc này"}
+    },
+    {
+      "number": 72, "rank": "thuong-thuong",
+      "title": "Trăm hoa đua nở",
+      "poem": ["Tháng ba trăm sắc nở đầy vườn", "Bướm ong rộn rã khắp con đường", "Muôn hoa mỗi vẻ đều tươi thắm", "Mọi người đều được hưởng yêu thương"],
+      "meaning": "Mọi người xung quanh đều tốt đẹp, môi trường thuận lợi để phát triển.",
+      "advice": {"giaDao": "Đầm ấm", "congViec": "Tập thể đoàn kết", "sucKhoe": "Tốt", "taiLoc": "Phát triển"}
+    },
+    {
+      "number": 73, "rank": "thuong",
+      "title": "Lò gốm đỏ lửa",
+      "poem": ["Lò gốm bên sông lửa đỏ hồng", "Đất sét vào lò mấy ngày ròng", "Ra lò thành chiếc bình men biếc", "Qua thử thách rồi mới thành công"],
+      "meaning": "Thử thách vừa qua giúp bạn trưởng thành. Thành quả đang đến.",
+      "advice": {"giaDao": "Gắn bó hơn sau khó khăn", "congViec": "Thành công sau rèn luyện", "sucKhoe": "Khỏe hơn trước", "taiLoc": "Khá dần"}
+    },
+    {
+      "number": 74, "rank": "trung",
+      "title": "Đường làng quanh co",
+      "poem": ["Đường làng quanh co mấy khúc quanh", "Lũy tre che khuất bóng nhà tranh", "Cứ đi rồi thấy mái nhà đỏ", "Chẳng vội mà về đến rất nhanh"],
+      "meaning": "Chưa thấy đích nhưng đang đi đúng đường. Cứ tiếp tục, đừng đổi hướng.",
+      "advice": {"giaDao": "Ổn", "congViec": "Giữ hướng hiện tại", "sucKhoe": "Bình thường", "taiLoc": "Đều"}
+    },
+    {
+      "number": 75, "rank": "ha",
+      "title": "Sương mù trên đồi",
+      "poem": ["Sương mù dày đặc phủ đồi nương", "Người đi chẳng thấy lối về đường", "Đứng yên chờ nắng tan sương sớm", "Lối cũ hiện ra rõ mọi phương"],
+      "meaning": "Đang mất phương hướng. Đừng đi lung tung; đứng yên chờ mọi việc sáng tỏ.",
+      "advice": {"giaDao": "Hỏi ý người thân", "congViec": "Tạm dừng, chưa quyết", "sucKhoe": "Nghỉ ngơi", "taiLoc": "Giữ tiền mặt"}
+    },
+    {
+      "number": 76, "rank": "thuong-thuong",
+      "title": "Nhà mới đón xuân",
+      "poem": ["Nhà mới khang trang đón gió xuân", "Họ hàng làng xóm đến ân cần", "Bàn thờ hương khói lời cầu chúc", "An cư lạc nghiệp phúc muôn phần"],
+      "meaning": "Rất tốt cho việc nhà cửa: xây sửa, chuyển nhà, an cư.",
+      "advice": {"giaDao": "An cư", "congViec": "Ổn định, thuận lợi", "sucKhoe": "Tốt", "taiLoc": "Có của ăn của để"}
+    },
+    {
+      "number": 77, "rank": "thuong",
+      "title": "Cây đa đầu làng",
+      "poem": ["Cây đa đầu làng bóng mát xanh", "Bao đời che chở khách bộ hành", "Gốc sâu rễ chắc qua mưa bão", "Ai tựa vào đây cũng yên lành"],
+      "meaning": "Bạn là chỗ dựa cho người khác, và chính điều đó làm bạn vững vàng.",
+      "advice": {"giaDao": "Là chỗ dựa cho gia đình", "congViec": "Được tin cậy", "sucKhoe": "Bền bỉ", "taiLoc": "Ổn định"}
+    },
+    {
+      "number": 78, "rank": "trung",
+      "title": "Ngồi câu bên hồ",
+      "poem": ["Ngồi câu bên hồ buổi sớm mai", "Phao im mặt nước đợi hoài hoài", "Ai vội giật cần thì cá sợ", "Kiên tâm cá lớn cắn câu ngay"],
+      "meaning": "Cần kiên nhẫn chờ đúng thời điểm. Nóng vội sẽ hỏng việc.",
+      "advice": {"giaDao": "Nhẫn nại", "congViec": "Chờ thời cơ", "sucKhoe": "Thư giãn", "taiLoc": "Đừng vội đầu tư"}
+    },
+    {
+      "number": 79, "rank": "ha",
+      "title": "Lũ về ngập bãi",
+      "poem": ["Lũ về nước đục ngập bờ tre", "Dọn đồ lên gác, đóng cửa che", "Nước rút phù sa bồi ruộng mới", "Mùa sau lúa tốt khắp đồng quê"],
+      "meaning": "Có biến cố lớn, cần chuẩn bị phòng tránh. Qua rồi sẽ có cơ hội mới.",
+      "advice": {"giaDao": "Đoàn kết, lo cho người già", "congViec": "Phòng rủi ro, giữ kỹ giấy tờ", "sucKhoe": "Cẩn thận đi lại mùa mưa", "taiLoc": "Dự phòng chi tiêu"}
+    },
+    {
+      "number": 80, "rank": "thuong-thuong",
+      "title": "Năm phúc đến nhà",
+      "poem": ["Năm phúc cùng về đến cửa nhà", "Sống lâu giàu có lại hiền hòa", "Thân an tâm khỏe đời thanh thản", "Một nhà trên dưới thuận như hoa"],
+      "meaning": "Quẻ phúc trọn vẹn: sống lâu, đủ đầy, khỏe mạnh, đức tốt, an lành.",
+      "advice": {"giaDao": "Trọn vẹn", "congViec": "Hanh thông", "sucKhoe": "Trường thọ", "taiLoc": "Giàu có"}
+    },
+    {
+      "number": 81, "rank": "thuong",
+      "title": "Gà mẹ ấp con",
+      "poem": ["Gà mẹ xòe cánh ủ đàn con", "Mưa to gió lớn ổ vẫn tròn", "Lo cho con nhỏ không ngơi nghỉ", "Mai kia con lớn vẫn sắt son"],
+      "meaning": "Tốt cho gia đình, con cái. Tình thương và sự chăm sóc sẽ được đáp đền.",
+      "advice": {"giaDao": "Con cái ngoan, khỏe", "congViec": "Ổn", "sucKhoe": "Tốt cho phụ nữ, trẻ nhỏ", "taiLoc": "Đủ"}
+    },
+    {
+      "number": 82, "rank": "trung",
+      "title": "Thợ già tạc tượng",
+      "poem": ["Thợ già ngồi tạc tượng gỗ lim", "Ngày ngày từng nét đục lặng im", "Ai qua cũng hỏi bao giờ xong", "Xong rồi mới thấy cả trái tim"],
+      "meaning": "Việc đang làm cần tỉ mỉ, chưa xong nhưng sẽ rất giá trị. Đừng để người khác hối thúc.",
+      "advice": {"giaDao": "Ổn", "congViec": "Làm kỹ, đừng vội giao", "sucKhoe": "Giữ mắt, nghỉ tay", "taiLoc": "Về sau sẽ có"}
+    },
+    {
+      "number": 83, "rank": "ha",
+      "title": "Trượt chân bờ ruộng",
+      "poem": ["Bờ ruộng trơn trượt sau cơn mưa", "Bước vội chân trơn ngã chẳng vừa", "Đứng dậy phủi bùn đi chậm lại", "Đến nhà vẫn kịp bữa cơm trưa"],
+      "meaning": "Có thể vấp ngã nhỏ vì vội vàng. Chậm lại một chút, không có gì nghiêm trọng.",
+      "advice": {"giaDao": "Bỏ qua lỗi nhỏ cho nhau", "congViec": "Kiểm tra lại trước khi nộp", "sucKhoe": "Cẩn thận té ngã", "taiLoc": "Chi nhỏ ngoài dự kiến"}
+    },
+    {
+      "number": 84, "rank": "thuong-thuong",
+      "title": "Gió xuân khắp nẻo",
+      "poem": ["Gió xuân thổi khắp nẻo đường quê", "Hoa đào hoa mận nở xum xuê", "Người đi xa đã về sum họp", "Năm mới an vui trọn bốn bề"],
+      "meaning": "Không khí đoàn viên, vạn sự khởi sắc. Rất tốt để bắt đầu điều mới.",
+      "advice": {"giaDao": "Đoàn viên", "congViec": "Khởi sắc", "sucKhoe": "Tươi tỉnh", "taiLoc": "Lộc xuân"}
+    },
+    {
+      "number": 85, "rank": "thuong",
+      "title": "Sách cũ đọc lại",
+      "poem": ["Đêm khuya lật lại sách ông cha", "Chữ xưa nghĩa cũ vẫn chan hòa", "Bao điều tưởng khó nay sáng tỏ", "Lời hay ý đẹp dẫn đường ta"],
+      "meaning": "Câu trả lời nằm trong kinh nghiệm cũ. Học hỏi từ người đi trước, từ sách vở.",
+      "advice": {"giaDao": "Hỏi ông bà, cha mẹ", "congViec": "Học thêm sẽ có lợi", "sucKhoe": "Tốt", "taiLoc": "Ổn"}
+    },
+    {
+      "number": 86, "rank": "trung",
+      "title": "Nhịp chày giã gạo",
+      "poem": ["Cối đá chày tre giã sớm trưa", "Hai người một nhịp nhịp nhàng đưa", "Lệch tay một chút chày va chạm", "Đều nhịp gạo trắng chẳng thiếu thừa"],
+      "meaning": "Cần phối hợp nhịp nhàng với người khác. Lắng nghe nhau thì việc trôi chảy.",
+      "advice": {"giaDao": "Vợ chồng đồng lòng", "congViec": "Làm việc nhóm", "sucKhoe": "Bình thường", "taiLoc": "Hợp tác chia đều"}
+    },
+    {
+      "number": 87, "rank": "ha",
+      "title": "Trăng đáy giếng",
+      "poem": ["Trăng in đáy giếng sáng long lanh", "Khỉ con thò tay vớt chẳng thành", "Điều mình đuổi theo là ảo ảnh", "Trăng thật trên trời vẫn sáng xanh"],
+      "meaning": "Đang theo đuổi điều không thật. Xem lại mục tiêu, đừng chạy theo bề ngoài.",
+      "advice": {"giaDao": "Tránh ghen tuông vô cớ", "congViec": "Cẩn thận lời hứa hẹn", "sucKhoe": "Bình thường", "taiLoc": "Coi chừng lừa đảo"}
+    },
+    {
+      "number": 88, "rank": "thuong-thuong",
+      "title": "Bình an trọn năm",
+      "poem": ["Bốn mùa xuân hạ với thu đông", "Năm nào cũng thuận gió hanh thông", "Trong ấm ngoài êm người khỏe mạnh", "Bình an trọn vẹn đến muôn lòng"],
+      "meaning": "Một năm bình an trọn vẹn, không có lo âu lớn.",
+      "advice": {"giaDao": "Bình an", "congViec": "Thuận lợi", "sucKhoe": "Khỏe mạnh", "taiLoc": "Đều đặn"}
+    },
+    {
+      "number": 89, "rank": "thuong",
+      "title": "Mái chèo đều tay",
+      "poem": ["Đò ngang cô lái mái chèo đều", "Sông rộng nước xiết chẳng bao nhiêu", "Khách ngồi yên dạ thuyền vững chãi", "Sang sông an ổn lúc ráng chiều"],
+      "meaning": "Có người đáng tin giúp bạn qua giai đoạn khó. Hãy tin tưởng.",
+      "advice": {"giaDao": "Tin nhau", "congViec": "Có người giỏi hỗ trợ", "sucKhoe": "Tốt", "taiLoc": "Ổn định"}
+    },
+    {
+      "number": 90, "rank": "trung",
+      "title": "Hoa quỳnh nở đêm",
+      "poem": ["Hoa quỳnh nở muộn giữa đêm thâu", "Hương thơm thoang thoảng chẳng bao lâu", "Ai thức chờ trông thì được thấy", "Quý nhất là người biết đợi lâu"],
+      "meaning": "Cơ hội đẹp đến muộn và ngắn ngủi. Hãy sẵn sàng để không bỏ lỡ.",
+      "advice": {"giaDao": "Bình thường", "congViec": "Để ý cơ hội", "sucKhoe": "Đừng thức quá khuya", "taiLoc": "Có cơ hội ngắn"}
+    },
+    {
+      "number": 91, "rank": "ha",
+      "title": "Thuyền nan rò nước",
+      "poem": ["Thuyền nan rò nước giữa sông dài", "Tát mãi không vơi mỏi rã tay", "Ghé vào bờ trám cho chắc chắn", "Rồi hẵng đi tiếp cũng chưa chầy"],
+      "meaning": "Có chỗ hở đang làm hao tổn. Dừng lại sửa trước, rồi mới đi tiếp.",
+      "advice": {"giaDao": "Giải quyết mâu thuẫn tận gốc", "congViec": "Sửa lỗi trong cách làm", "sucKhoe": "Đi khám nếu thấy không khỏe", "taiLoc": "Thất thoát, cần kiểm tra"}
+    },
+    {
+      "number": 92, "rank": "thuong-thuong",
+      "title": "Mây lành che nắng",
+      "poem": ["Trưa hè nắng gắt giữa đồng xa", "Mây lành bỗng kéo phủ bóng qua", "Người làm đồng áng thêm sức mạnh", "Trời thương người chăm, phúc đến nhà"],
+      "meaning": "Được che chở đúng lúc. Có phúc lớn, quý nhân phù trợ.",
+      "advice": {"giaDao": "Được che chở", "congViec": "Quý nhân giúp", "sucKhoe": "Tốt", "taiLoc": "Có lộc"}
+    },
+    {
+      "number": 93, "rank": "thuong",
+      "title": "Lên núi gần đỉnh",
+      "poem": ["Núi cao trước mặt ngút mây trời", "Từng bậc đá xanh bước chẳng rời", "Lưng chừng ngoảnh lại đường đã vượt", "Đỉnh cao chỉ cách mấy bước thôi"],
+      "meaning": "Bạn đã đi được phần lớn chặng đường. Cố thêm chút nữa là tới đích.",
+      "advice": {"giaDao": "Động viên nhau", "congViec": "Sắp hoàn thành", "sucKhoe": "Giữ sức", "taiLoc": "Sắp thu hoạch"}
+    },
+    {
+      "number": 94, "rank": "trung",
+      "title": "Ấm trà nguội",
+      "poem": ["Ấm trà để lâu đã nguội rồi", "Châm thêm nước sôi lại thơm tươi", "Tình cảm cũng cần chăm chút mãi", "Chẳng hâm thì nguội, chuyện thường thôi"],
+      "meaning": "Một mối quan hệ đang nhạt dần. Chủ động quan tâm thì sẽ ấm lại.",
+      "advice": {"giaDao": "Quan tâm người thân", "congViec": "Liên lạc lại đối tác cũ", "sucKhoe": "Uống nước ấm", "taiLoc": "Bình thường"}
+    },
+    {
+      "number": 95, "rank": "ha",
+      "title": "Cửa đóng then cài",
+      "poem": ["Cửa nhà ai đóng kín then cài", "Gõ mãi không ai mở cửa ngoài", "Thôi hãy đi tìm cửa khác vậy", "Đường đời đâu phải chỉ đường này"],
+      "meaning": "Có cánh cửa đang đóng lại. Đừng cố quá; tìm hướng khác sẽ mở ra.",
+      "advice": {"giaDao": "Đừng ép người khác", "congViec": "Tìm cơ hội khác", "sucKhoe": "Thư giãn", "taiLoc": "Chưa có"}
+    },
+    {
+      "number": 96, "rank": "thuong-thuong",
+      "title": "Phật độ bình an",
+      "poem": ["Trước điện quỳ dâng một nén nhang", "Từ bi soi khắp chốn trần gian", "Lòng thành thì Phật luôn che chở", "Tai qua nạn khỏi được bình an"],
+      "meaning": "Điều đang lo lắng sẽ được hóa giải. Giữ lòng thành và sống thiện.",
+      "advice": {"giaDao": "Bình an", "congViec": "Qua khỏi khó khăn", "sucKhoe": "Bệnh nhẹ mau khỏi", "taiLoc": "Ổn định"}
+    },
+    {
+      "number": 97, "rank": "thuong",
+      "title": "Đường xa có bạn",
+      "poem": ["Đường xa có bạn chẳng thấy dài", "Chuyện trò bước nhẹ tới non Đoài", "Người đồng hành tốt hơn vàng bạc", "Cùng nhau vững bước tới ngày mai"],
+      "meaning": "Người bạn đồng hành tốt là tài sản quý. Hợp tác, đi cùng nhau sẽ thành.",
+      "advice": {"giaDao": "Vợ chồng đồng lòng", "congViec": "Hợp tác tốt", "sucKhoe": "Vui khỏe", "taiLoc": "Chia lợi đều"}
+    },
+    {
+      "number": 98, "rank": "trung",
+      "title": "Nắng mưa thất thường",
+      "poem": ["Sáng nắng chiều mưa khó đoán thay", "Người khôn mang nón lẫn áo dày", "Chuẩn bị chu toàn thì chẳng ngại", "Trời đổi thế nào vẫn vững tay"],
+      "meaning": "Hoàn cảnh hay thay đổi. Chuẩn bị phương án dự phòng thì không lo.",
+      "advice": {"giaDao": "Linh hoạt", "congViec": "Có phương án dự phòng", "sucKhoe": "Giữ gìn khi trời trở", "taiLoc": "Để dành phòng khi cần"}
+    },
+    {
+      "number": 99, "rank": "ha",
+      "title": "Đêm trường chờ sáng",
+      "poem": ["Đêm trường thao thức đếm canh thâu", "Bao điều lo nghĩ nặng trong đầu", "Thắp ngọn đèn con, ngồi niệm Phật", "Lòng nhẹ, bình minh đã đến mau"],
+      "meaning": "Đang nhiều lo âu, khó ngủ. Tĩnh tâm, buông bớt suy nghĩ, khó khăn sẽ dịu đi.",
+      "advice": {"giaDao": "Chia sẻ nỗi lo", "congViec": "Đừng ôm việc vào đêm", "sucKhoe": "Chăm giấc ngủ", "taiLoc": "Đừng lo quá về tiền"}
+    },
+    {
+      "number": 100, "rank": "thuong-thuong",
+      "title": "Viên mãn",
+      "poem": ["Trăng tròn hoa nở giữa xuân sang", "Nhà nhà vui vẻ khắp xóm làng", "Cầu được ước thấy lòng thanh tịnh", "Trăm năm phúc đức mãi vững vàng"],
+      "meaning": "Quẻ viên mãn khép lại trăm quẻ. Mọi sự tốt lành, phúc đức bền lâu.",
+      "advice": {"giaDao": "Viên mãn", "congViec": "Thành tựu", "sucKhoe": "An khang", "taiLoc": "Phú quý"}
+    }
+  ]
+}
